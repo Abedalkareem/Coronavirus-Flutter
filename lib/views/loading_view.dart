@@ -1,5 +1,5 @@
-import 'package:coronavirus/helpers/constants/app_helper.dart';
 import 'package:coronavirus/helpers/constants/app_images.dart';
+import 'package:coronavirus/helpers/extensions/num_extension.dart';
 import 'package:coronavirus/helpers/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +24,7 @@ class _LoadingView extends State<StatefulWidget> with TickerProviderStateMixin {
     _animationController = AnimationController(
       vsync: this,
       duration: Duration(seconds: _animationTime),
-      upperBound: AppHelper.radiansFrom(degree: 360),
+      upperBound: 360.toRadians(),
     );
     _animationController.repeat();
   }

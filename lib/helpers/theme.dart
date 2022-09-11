@@ -1,5 +1,23 @@
 import 'package:flutter/material.dart';
 
+class AppTheme {
+  static final data = ThemeData(
+      brightness: Brightness.dark,
+      colorScheme: ColorScheme(
+        brightness: Brightness.dark,
+        primary: AppColors.primary,
+        onPrimary: AppColors.white,
+        secondary: AppColors.secondary,
+        onSecondary: AppColors.white,
+        error: AppColors.primary,
+        onError: AppColors.secondary,
+        background: AppColors.primary,
+        onBackground: AppColors.secondary,
+        surface: AppColors.primary,
+        onSurface: AppColors.secondary,
+      ));
+}
+
 class AppColors {
   static const primary = Color(0xff8a0103);
   static const secondary = Color(0xff000000);

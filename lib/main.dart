@@ -13,10 +13,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: Strings.appTitle,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: AppColors.primary,
-      ),
+      theme: AppTheme.data,
       home: SplashScreen(),
     );
   }
