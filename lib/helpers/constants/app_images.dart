@@ -9,5 +9,4 @@ class AppImages {
   static final mapIcon = "${_images}map_icon.png";
   static final listIcon = "${_images}list_icon.png";
   static final maskIcon = "${_images}mask_icon.png";
-
 }

@@ -1,7 +1,7 @@
 import 'dart:math';
 
 class AppHelper {
-  static double radiansFrom({degree: int}) {
+  static double radiansFrom({required int degree}) {
     return degree * pi / 180.0;
   }
 }

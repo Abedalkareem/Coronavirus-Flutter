@@ -16,7 +16,6 @@ class App extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         primaryColor: AppColors.primary,
-        accentColor: AppColors.secondary,
       ),
       home: SplashScreen(),
     );

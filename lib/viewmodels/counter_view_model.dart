@@ -5,7 +5,7 @@ import 'base_view_model.dart';
 class CounterViewModel extends BaseViewModel {
   final _informationStreamController =
       StreamController<Information>.broadcast();
-  Timer _timer;
+  late Timer _timer;
 
   StreamSink<Information> get infoSink => _informationStreamController.sink;
 

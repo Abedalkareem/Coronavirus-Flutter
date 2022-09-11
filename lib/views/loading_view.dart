@@ -11,7 +11,7 @@ class LoadingView extends StatefulWidget {
 }
 
 class _LoadingView extends State<StatefulWidget> with TickerProviderStateMixin {
-  var _animationController;
+  late var _animationController;
   final _animationTime = 3;
 
   @override

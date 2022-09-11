@@ -13,7 +13,7 @@ class IntroScreen extends StatefulWidget {
 }
 
 class _IntroScreen extends State<StatefulWidget> with TickerProviderStateMixin {
-  var _animationController;
+  late var _animationController;
   final _animationTime = 8;
 
   @override

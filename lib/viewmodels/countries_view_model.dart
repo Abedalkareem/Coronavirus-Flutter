@@ -13,7 +13,7 @@ class CountriesViewModel extends BaseViewModel {
   Stream<List<Country>> get countriesStream =>
       _countriesStreamController.stream;
 
-  Timer _timer;
+  late Timer _timer;
 
   CountriesViewModel() {
     _observeForCountriesList();

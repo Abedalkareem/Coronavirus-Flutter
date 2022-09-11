@@ -17,9 +17,9 @@ class MapScreen extends StatefulWidget {
 class _MapScreen extends State<StatefulWidget> with TickerProviderStateMixin {
   var _markers = Set<Marker>();
   final _cameraPosition = CameraPosition(target: LatLng(30.987028, 107.773498));
-  GoogleMapController _controller;
+  late GoogleMapController _controller;
   var _visible = false;
-  double _devicePixelRatio;
+  double? _devicePixelRatio;
   var _viewModel = CountriesViewModel();
 
   @override

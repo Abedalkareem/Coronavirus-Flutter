@@ -1,15 +1,21 @@
 class Country {
-  var name = "Text";
-  var numbers = 0;
-  var lat = 0.0;
-  var lng = 0.0;
+  String name;
+  int numbers;
+  double lat;
+  double lng;
 
-  Country({this.name, this.numbers, this.lat, this.lng});
+  Country({
+    required this.name,
+    required this.numbers,
+    required this.lat,
+    required this.lng,
+  });
 
-  Country.fromJson(Map<String, dynamic> json) {
-    name = json["name"];
-    numbers = json["numbers"];
-    lat = json["lat"];
-    lng = json["lng"];
+  factory Country.fromJson(Map<String, dynamic> json) {
+    return Country(
+        name: json["name"],
+        numbers: json["numbers"],
+        lat: json["lat"],
+        lng: json["lng"]);
   }
 }

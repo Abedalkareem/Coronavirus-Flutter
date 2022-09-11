@@ -1,5 +1,4 @@
 import 'package:coronavirus/helpers/theme.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppButton extends StatelessWidget {
@@ -9,8 +8,8 @@ class AppButton extends StatelessWidget {
   final String text;
 
   AppButton({
-    @required this.onPressed,
-    @required this.text,
+    required this.onPressed,
+    required this.text,
     this.backgroundColor = AppColors.white,
     this.textColor = AppColors.secondary,
   });
