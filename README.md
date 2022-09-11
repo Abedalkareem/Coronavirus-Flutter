@@ -4,7 +4,7 @@
 [![Twitter](https://img.shields.io/badge/follow-twitter-00acee)](https://twitter.com/abedalkareemomr)
 
 
-# Coronavirus outbreak traking
+# Coronavirus outbreak tracking
 
 A Flutter app to track Coronavirus outbreak.
 
